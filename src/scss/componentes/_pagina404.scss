@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+.p404 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    i {
+        font-size: 20rem;
+        color: v.$indigo;
+        margin-bottom: 2rem;
+    }
+    .error404 {
+        color: v.$indigo;
+    }
+
+    .enlace {
+        color: v.$indigo;
+        &:hover {
+            color: darken(v.$indigo, 20%)
+        }
+    }
+}
